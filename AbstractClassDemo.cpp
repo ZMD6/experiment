@@ -42,3 +42,18 @@ public:
 Cube::Cube(float len): Cuboid(len, len, len){ }
 float Cube::area(){ return 6 * m_len * m_len; }
 float Cube::volume(){ return m_len * m_len * m_len; }
+
+int main(){
+    Line *p = new Cuboid(10, 20, 30);
+    cout<<"The area of Cuboid is "<<p->area()<<endl;
+    cout<<"The volume of Cuboid is "<<p->volume()<<endl;
+  
+    p = new Cube(15);
+    cout<<"The area of Cube is "<<p->area()<<endl;
+    cout<<"The volume of Cube is "<<p->volume()<<endl;
+    return 0;
+
+}
+
+
+
